@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>STEM Konnekt</title>
+        <link href="./css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+        <link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+        
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+  
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+
+    </head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">STEM Konnect</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<div class="container">
+    <div class="jumbotron">
+      <h1>STEM Konekt</h1>
+      <p>Explore STEM events in Uganda</p>
+      <form>
+      <div class="form-group row">
+          <div class="col-xs-3">
+            <div class="input-group date" id="location">
+              <input class="form-control" id="ex1" type="text" placeholder="Location">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+           </div>
+          </div>
+          <div class="col-xs-3">
+              <div class="form-group">
+                  <select class="form-control" id="sel1">
+                    <option>Science</option>
+                    <option>Technology</option>
+                    <option>Engineering</option>
+                    <option>Mathematics</option>
+                  </select>
+               </div> 
+          </div>
+      
+          <div class="col-xs-3">
+              <div class="input-group date" id="datetimepicker1">
+                <input class="form-control" id="date" name="date" placeholder="Date">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+              </div>
+          </div>
+          <div class="col-xs-3">
+              
+                 <a href="#" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-search"></span> Search
+</a>
+            </div>
+          </div>
+  </form>
+
+<div class="container">
+  <h2>Modal Login Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+
+    </div>
+  </div>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Recommended Events around Uganda</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p><a href="#">Science Meetup at College of Science..</a></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p><a href="#">Technology Meetup at Hive Colab..</a></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p><a href="#">Engineering Expo 2017 at Makerere University..</a></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p><a href="#">Mathematics Meetup at the National Library..</a></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">  
+        <h3>STEM Konnect Suggestions</h3><br>  
+  <div class="row">
+    <div class="col-sm-3">
+      <p><a href="#">Learn Coding in 100 days..</a></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p><a href="#">Opportunity: Hiring Top Female Coders..</a></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p><a href="#">Look out around for great Mentors around..</a></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p><a href="#">Do you want to become an Influencer?..</a></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br><br>
+<footer class="container-fluid text-center">
+  <p>©2017 Copyright Reserved</p>
+</footer>
+
+</body>
+</html>
