@@ -4,13 +4,25 @@
         <title>STEM Konnekt</title>
         <link href="./css/bootstrap.min.css" rel='stylesheet' type='text/css' />
         <link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
-        
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
         <meta charset="utf-8" >
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<script type="text/javascript" src="./js/jquery.min.js"></script>
-  
-    <script type="text/javascript" src="./js/bootstrap.js"></script>
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.js"></script>
+        <link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+
+        
+
+    <style>
+    .red{
+        border: 1px solid red;
+    }
+    .my-cards{
+      border-radius: 6px;
+    }
+    </style>
 
     </head>
 <body>
@@ -26,8 +38,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" ></span> Sign Up</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal1">
+            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -35,7 +49,7 @@
 <br>
 <div class="container">
     <div class="jumbotron">
-      <h1>STEM Konekt</h1>
+      <h1>STEM Konnekt</h1>
       <p>Explore STEM events in Uganda</p>
       <form>
       <div class="form-group row">
@@ -71,12 +85,42 @@
           </div>
   </form>
 
-<div class="container">
-  <h2>Modal Login Example</h2>
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+</div><br>
 
-  <!-- Modal -->
+<div class="container-fluid bg-3 text-center">  
+        <h3>STEM Konnect Suggestions</h3><br> 
+   
+  <div class="row text-center">
+    <div class="col-sm-4" >
+      <div class="col-md-12 red"> 
+      <div class="block">
+        <div class="block-content">
+          <h4>Opportunity: Hiring Top Female Coders..</h4>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"><br>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="col-md-12 red">
+        <h4>Look out around for great Mentors around..</h4>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"><br>
+      </div>
+      </div>
+    <div class="col-sm-4">
+      <div class="col-md-12 my-cards red">
+      <h4>Do you want to become an Influencer?..</h4>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"><br>
+    </div> 
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>©2017 Copyright Reserved</p>
+</footer>
+  
+  <!-- Signup Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -127,52 +171,59 @@ $(document).ready(function(){
   </div>
 </div>
   
-<div class="container-fluid bg-3 text-center">    
-  <h3>Recommended Events around Uganda</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p><a href="#">Science Meetup at College of Science..</a></p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p><a href="#">Technology Meetup at Hive Colab..</a></p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p><a href="#">Engineering Expo 2017 at Makerere University..</a></p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p><a href="#">Mathematics Meetup at the National Library..</a></p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
+</div>
 
-<div class="container-fluid bg-3 text-center">  
-        <h3>STEM Konnect Suggestions</h3><br>  
-  <div class="row">
-    <div class="col-sm-3">
-      <p><a href="#">Learn Coding in 100 days..</a></p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+
+  
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+        <form>
+          <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+          </div><br>
+          <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input id="email" type="password" class="form-control" name="email" placeholder="Password">
+          </div>
+          <br>
+            <button type="button" class="btn btn-primary">Login</button>
+          </form><br>
+        <div class="modal-footer">
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
     </div>
-    <div class="col-sm-3"> 
-      <p><a href="#">Opportunity: Hiring Top Female Coders..</a></p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p><a href="#">Look out around for great Mentors around..</a></p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p><a href="#">Do you want to become an Influencer?..</a></p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+  </div> 
+</div>
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+
     </div>
   </div>
-</div><br><br>
-<footer class="container-fluid text-center">
-  <p>©2017 Copyright Reserved</p>
-</footer>
+  </div>
+</div>
+  
+
 
 </body>
 </html>

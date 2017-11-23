@@ -1806,12 +1806,14 @@ pre code {
   }
   .col-sm-4 {
     width: 33.33333333%;
+    
   }
   .col-sm-3 {
     width: 25%;
   }
   .col-sm-2 {
     width: 16.66666667%;
+    background-color:blue;
   }
   .col-sm-1 {
     width: 8.33333333%;
@@ -1940,6 +1942,7 @@ pre code {
   }
   .col-md-12 {
     width: 100%;
+    background-color:blue;
   }
   .col-md-11 {
     width: 91.66666667%;
@@ -4962,13 +4965,14 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #66d4dd;
+  background-color: blue;
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: white;
 }
 .jumbotron p {
+
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
@@ -5934,11 +5938,16 @@ button.close {
   opacity: .5;
 }
 .modal-header {
+  background-color:blue;
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
   margin-top: -2px;
+}
+.modal-header h4,
+.modal-header.h4{
+  color:white;
 }
 .modal-title {
   margin: 0;
@@ -5950,7 +5959,7 @@ button.close {
 }
 .modal-footer {
   padding: 15px;
-  text-align: right;
+  text-align: center;
   border-top: 1px solid #e5e5e5;
 }
 .modal-footer .btn + .btn {
