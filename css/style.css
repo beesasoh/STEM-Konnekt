@@ -16,7 +16,9 @@ Our added CSS
 .modal-header>h4{
 	color: white;
 }
-
+.center{
+	text-align: center;
+}
 
 
 
