@@ -1,11 +1,14 @@
 /*
 Our added CSS
 */
-.bg-blue{
-	background-color: dodgerblue;
-}
+
 .bg-blu{
-	background-color: deepskyblue;
+	background-color: steelblue;
+}
+.card{
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.5), 0 2px 2px 0 rgba(0,0,0,0.2);
+	box-sizing: border-box;
+	background-color: lightblue
 }
 .jumbotron>h1{
 	color: white;
@@ -25,8 +28,8 @@ Our added CSS
 .left-align{
 	text-align: left;
 }
-.bg-blue a, .bg-blue a:hover{
-	color:black;
+.card a, .card a:hover{
+	
 	text-decoration: none;
 }
 
@@ -37,5 +40,5 @@ Our added CSS
 .fixed-image{
 	width:100%;
 	height:240px;
-	background-size: cover;
+	background-size: cover;	
 }
